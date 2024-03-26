@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake's Kopii</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <img src="Coffee List/Logo .png" alt="Jake's Kopii Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <main name="Order Now">
+        <div class="coffeecontainer">
+            <ul>
+                <li class="box" alt="Coffee" onclick="orderPrompt('Coffee 1')">
+                    <div>
+                        <img src="Coffee List/Coffee1.png" alt="Coffee 1" onclick="openOrderDialog('Coffee 1')">
+                        <p>Kape mainit</p>
+                            <div>
+                                <span>Kape Mainit</span>
+                            </div>
+                    </div>
+                </li>
+                <li class="box" onclick="orderPrompt('Coffee 2')">
+                    <div>
+                        <img src="Coffee List/Coffee2.png" alt="Coffee 2" onclick="openOrderDialog('Coffee 2')">
+                        <p>Kape mainit</p>
+                        <div>
+                            <span>Kape Mainit</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="box" onclick="orderPrompt('Coffee 3')">
+                    <div>
+                        <img src="Coffee List/Coffee3.png" alt="Coffee 3" onclick="openOrderDialog('Coffee 3')">
+                        <p>Kape mainit</p>
+                        <div>
+                            <span>Kape Mainit</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="box" onclick="orderPrompt('Coffee 4')">
+                    <div>
+                        <img src="Coffee List/Coffee4.png" alt="Coffee 4" onclick="openOrderDialog('Coffee 4')">
+                        <p>Kape mainit</p>
+                            <div>
+                                <span>Kape Mainit</span>
+                            </div>
+                    </div>
+                </li>
+                <li class="box" onclick="orderPrompt('Coffee 5')">
+                    <div>
+                        <img src="Coffee List/Coffee5.png" alt="Coffee 5" onclick="openOrderDialog('Coffee 5')">
+                        <p>Kape mainit</p>
+                        <div>
+                            <span>Kape Mainit</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="box" onclick="orderPrompt('Coffee 6')">
+                    <div>
+                        <img src="Coffee List/Coffee6.png" alt="Coffee 6" onclick="openOrderDialog('Coffee 6')">
+                        <p>Kape mainit</p>
+                        <div>
+                            <span>Kape Mainit</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="orderDialog" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeOrderDialog()">&times;</span>
+                <p id="coffeeName"></p>
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="text" id="location" placeholder="Your Location">
+                <input type="number" id="quantity" placeholder="Enter quantity">
+                <p id="totalValue"></p>
+                <button onclick="placeOrder()">Order</button>
+            </div>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
